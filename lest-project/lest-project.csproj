@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject>LestProject.Program</StartupObject>
+    <RootNamespace>LestProject</RootNamespace>
+    <AssemblyName>BurnDeviceControl</AssemblyName>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <PlatformTarget>x86</PlatformTarget>
+    <Description>WNC / Acroview ClientApp scaffold — MES folder browse + ProgCtrl flows</Description>
+  </PropertyGroup>
+
+</Project>
