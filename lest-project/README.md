@@ -18,9 +18,30 @@
 
 瀏覽檔案預設 **所有檔案 (*.*)**，另提供 `.apr/.apj`、`.tsk`、韌體副檔名作偏好，不強制。
 
-## 在 Windows 上建置／執行
+## 預建執行檔（下載即可試）
 
-需已安裝 [.NET 8 SDK](https://dotnet.microsoft.com/download) 與昂科 MultiAprog（含 `ProgCtrl.dll`）。
+倉庫內已附 **framework-dependent** 執行檔（需本機安裝 [.NET 8 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/8.0)）：
+
+```text
+lest-project\dist\win-x86\BurnDeviceControl.exe
+```
+
+完整路徑（放到本機後）：
+
+```text
+C:\Users\e6170\OneDrive\桌面\嘉明利\WNC\lest-project\dist\win-x86\BurnDeviceControl.exe
+```
+
+同目錄請保留：`BurnDeviceControl.dll`、`BurnDeviceControl.deps.json`、`BurnDeviceControl.runtimeconfig.json`（四個檔放一起）。
+
+雙擊 `BurnDeviceControl.exe` → 應出現 **BurnDevice Control** 視窗（三個流程區塊 + MES 資料夾）。  
+真機燒錄還需 `C:\ACROVIEW\MultiAprog\ProgCtrl.dll`；沒有 DLL 時可先確認 UI 有開起來。
+
+> 雲端無法寫入你的 OneDrive；請從 GitHub PR / 分支下載 `lest-project/dist/win-x86/`。
+
+## 在 Windows 上從原始碼建置
+
+需 [.NET 8 SDK](https://dotnet.microsoft.com/download) 與昂科 MultiAprog（含 `ProgCtrl.dll`）。
 
 ```bat
 cd /d "C:\Users\e6170\OneDrive\桌面\嘉明利\WNC\lest-project"
